@@ -33,6 +33,17 @@ class Stylist
     @id = result.first().fetch("id").to_i()
   end
 
+  define_method(:clients) do
+    clients_list = []
+    clients = DB.exec("SELECT * FROM clients WHERE stylist_id = #{self.id()};")
+    clients.each() do |client|
+      name = client.fetch("name")
+      stylist_id = client.fetch("stylist_id").to_i()
+      clients_list.push(Client.new({:name => name, :stylist_id => stylist_id}))
+    end
+    clients_list
+  end
+
   define_method(:==) do |another_stylist|
     self.name().==(another_stylist.name()).&(self.id().==(another_stylist.id()))
   end
