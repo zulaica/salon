@@ -20,7 +20,7 @@ $ gem install sinatra sinatra-contrib pg
 
 ## Setup
 
-You're gonna need a database called salon with two tables (stylists and clients).
+You'll need a database called salon with two tables (stylists and clients).
 Run the following in psql to make the magic happen:
 
 ```
