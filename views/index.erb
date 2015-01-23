@@ -1,0 +1,27 @@
+<section>
+  <form action="/" method="post">
+    <fieldset>
+      <legend>Add a stylist:</legend>
+
+      <label for="stylist_name">Stylist name:</label>
+      <input name="stylist_name" type="text" placeholder="Stylist's name">
+    </fieldset>
+
+    <button type="submit">Add stylist</button>
+    <button type="reset">Clear</button>
+  </form>
+</section>
+
+<section>
+<% if @stylists.any?() %>
+  <p>Click on a stylist's name to see their clients:</p>
+
+  <ul>
+    <% @stylists.each do |stylist| %>
+      <li><a href="/stylists/<%= stylist.id() %>"><%= stylist.name() %></a></li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>You need to hire you some stylists, fool!</p>
+<% end %>
+</section>

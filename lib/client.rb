@@ -7,7 +7,7 @@ class Client
     @stylist_id = attributes.fetch(:stylist_id)
   end
 
-define_singleton_method(:all) do
+  define_singleton_method(:all) do
     returned_clients = DB.exec("SELECT * FROM clients;")
     clients = []
     returned_clients.each() do |client|
