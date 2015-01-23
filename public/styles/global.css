@@ -143,9 +143,7 @@ body {
 
 a {
   border-color: #d0dad8;
-
   color: #0e745c;
-
   -webkit-transition-duration: .1s;
           transition-duration: .1s;
 }
@@ -157,22 +155,12 @@ a {
   a::before {
   	display: inline-block;
   	vertical-align: top;
-
   	margin-right: .125em;
-
     color: #d0dad8;
     font-family: FontAwesome;
     font-size: 1rem;
     font-style: normal;
     font-weight: 100;
-    /*
-     Subpixel-antialiasing blurs icon fonts.
-     http://noscope.com/2012/font-smoothing/
-     http://jaydenseric.com/blog/css-font-smoothing-for-firefox-mac
-     */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-
     -webkit-transition-duration: .1s;
             transition-duration: .1s;
   }
@@ -218,19 +206,16 @@ footer {
   -webkit-flex: 1 100%;
   -ms-flex: 1;
   flex: 1 100%;
-
   text-align: center;
 }
 
 header {
   height: 6rem;
-
   border-bottom: 1px dashed #d0dad8;
 }
 
 h1 {
   margin: auto;
-
   font-family: Oswald, sans-serif;
   font-size: 2.5rem;
   line-height: 1em; /* This feels like a hack */
@@ -242,13 +227,11 @@ main {
   -webkit-flex: 1 100%;
   -ms-flex: 1;
   flex: 1 100%;
-
   margin: auto;
 }
 
 section + section {
   margin-top: 1.5rem;
-
   border-top: 1px dashed #d0dad8;
 }
 
@@ -263,7 +246,6 @@ fieldset {
 }
   fieldset * {
     width: 100%;
-
     margin: auto auto 1.5rem;
   }
 
@@ -271,26 +253,19 @@ input {
   -webkit-flex: 1 100%;
   -ms-flex: 1;
   flex: 1 100%;
-
   padding: .25rem .5rem;
-
   border-bottom: 1px solid #d0dad8;
-
   background: transparent;
-
   -webkit-transition-duration: .1s;
   transition-duration: .1s
 }
 
 textarea {
   display: block;
-
   width: 100%;
   min-height: 6rem;
-
   margin: 1.5rem auto;
   padding: .25rem .5rem;
-
   border: 1px solid #d0dad8;
 }
 
@@ -301,23 +276,18 @@ textarea {
   textarea:active,
   textarea:focus {
     border-bottom-color: #0e745c;
-
     box-shadow: 0 2px 1px -1px #d0dad8;
   }
 
 button {
   width: 49%;
-
   padding: .5rem 1rem;
-
   color: #888;
   font-family: Oswald, sans-serif;
   font-weight: 400;
   letter-spacing: 1px;
   text-transform: uppercase;
-
   background-repeat: no-repeat;
-
   -webkit-transition-duration: .1s;
   transition-duration: .1s
 }
@@ -346,27 +316,21 @@ button {
 
 [href="/"] {
   float: left; /* Admittedly a hack; need to look into why `section` and this link are colliding. */
-
   margin: 1rem auto;
   padding: .5rem 1rem;
-
   border: 0;
-
   background: #ddd;
   background-image: -webkit-linear-gradient(left, #888 0%, #888 50%, transparent 50%, transparent 100%);
   background-image: linear-gradient(to right, #888 0%, #888 50%, transparent 50%, transparent 100%);
   background-size: 200% 100%;
   background-position: 100%;
-
   color: #888;
   font-family: Oswald, sans-serif;
   font-weight: 400;
   letter-spacing: 1px;
   text-transform: uppercase;
   text-decoration: none;
-
   outline: 0;
-
   -webkit-transition-duration: .1s;
   transition-duration: .1s
 }
@@ -379,12 +343,10 @@ button {
 
 footer {
   height: 4rem;
-
   border-top: 1px dashed #d0dad8;
 }
   footer p {
     margin: auto;
-
     font-family: Oswald, sans-serif;
     font-size: .75rem;
     font-style: italic;
@@ -409,9 +371,6 @@ button::before,
   font-size: 1rem;
   font-style: normal;
   font-weight: 100;
-
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 [type="submit"]::before {

@@ -1,4 +1,4 @@
-  <h2><%= @stylist.name() %>'s clients:</h2>
+<h2><%= @stylist.name() %>'s clients:</h2>
 
 <section>
   <form action="/clients" method="post">
@@ -17,17 +17,17 @@
 </section>
 
 <section>
-<% if @stylist.clients().any?() %>
+  <% if @stylist.clients().any?() %>
   <p>Here are all of <%= @stylist.name() %>'s clients:</p>
 
   <ul>
     <% @stylist.clients().each() do |client| %>
-      <li><%= client.name() %></li>
+    <li><%= client.name() %></li>
     <% end %>
   </ul>
-<% else %>
+  <% else %>
   <p><%= @stylist.name() %> ain't got no clients!</p>
-<% end %>
+  <% end %>
 </section>
 
 <section>

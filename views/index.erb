@@ -13,15 +13,15 @@
 </section>
 
 <section>
-<% if @stylists.any?() %>
+  <% if @stylists.any?() %>
   <p>Click on a stylist's name to see their clients:</p>
 
   <ul>
     <% @stylists.each do |stylist| %>
-      <li><a href="/stylists/<%= stylist.id() %>"><%= stylist.name() %></a></li>
+    <li><a href="/stylists/<%= stylist.id() %>"><%= stylist.name() %></a></li>
     <% end %>
   </ul>
-<% else %>
+  <% else %>
   <p>You need to hire you some stylists, fool!</p>
-<% end %>
+  <% end %>
 </section>
